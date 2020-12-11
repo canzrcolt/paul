@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container-background {
+    background-image: linear-gradient(45deg, #a1b5e2 0%, #f2fff7 100%);
+}
+
+.rounded-box, .squared-box{
+    display: flex;
+    height: 22rem;
+    width: 22rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.rounded-box{
+    border-radius: 20%;
+    background-color:  #4e5870;
+}
+
+.squared-box {
+    background-color: #e4ad46;
+}
+
+@media (max-width: 900px){
+    .rounded-box, .squared-box{
+        height: 16rem;
+        width: 16rem;
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+.text h1{
+    display: flex;
+    justify-self: center;
+}
+/* Class to be added or removed via DOM manipulation */
+.hidden {
+    visibility: hidden;
+}
+
+.ocean-background{
+    background-image: url("hero.jpg"); 
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.ocean-background .btn-text-container{
+    color: white;
+    transform: translateY(20);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12rem;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+}
+.btn-text-container {
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+   
+}
+.btn1, .btn2, .btn3{
+    margin: 1rem;
+    display: flex;
+    height: 16%;
+    width: 9%;
+    border-radius: 1rem;
+    background-color: #7f7f80;
+}
+.btnOn {
+    background-color: #e4ad46;
+}
+
+.why-background {
+    background-color: rgb(73, 4, 4);
+}
+.why-background .rounded-box {
+    background-color: blueviolet;
+}
+.ocean-background .btn-text-container{
+    padding: .5rem;
+    background-color: rgba(8, 8, 8, 0.582);
+    border-radius: .2rem;
+    
+}
